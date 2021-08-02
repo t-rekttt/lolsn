@@ -21,6 +21,6 @@
 - File code mặc định được lấy từ https://github.com/HanaIroha/ToolSinhNhatLOL2021/blob/main/Toolcodell/bin/Release/code.txt. Hãy star repo đó nếu nó giúp ích cho bạn
 
 ### Nếu code chạy tốt, hãy
-- Star repo này
+- Star repo này, follow Github
 - Like bài viết
 - Khen chủ thớt đẹp trai
