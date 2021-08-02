@@ -1,5 +1,12 @@
-import requests, os, re, subprocess
+import requests, os, re, subprocess, ctypes, sys
 from random import shuffle
+ 
+def isAdmin():
+    try:
+        is_admin = (os.getuid() == 0)
+    except AttributeError:
+        is_admin = ctypes.windll.shell32.IsUserAnAdmin() != 0
+    return is_admin
 
 s = requests.session()
 
@@ -33,22 +40,31 @@ def useCode(code, accountToken):
     return res.json()
 
 if __name__ == '__main__':
-    #Please leave credits
-    print('LOL code tool by T-Rekt - J2TEAM')
-    
-    #Fill in your code file path (or leave it default)
-    codes = open('lolcode.txt', encoding='utf-8').readlines()
-    shuffle(codes)
-
-    token = getToken()
-
-    for code in codes:
-        print(code)
+    try:
+        #Please leave credits
+        print('LOL code tool by T-Rekt - J2TEAM. Get token function contributed by Nomi')
         
-        res = useCode(code, token)
+        if not isAdmin():
+            print('Please run as admin!')
+            sys.exit(0)
 
-        print(res)
+        #Fill in your code file path (or leave it default)
+        codes = open('lolcode.txt', encoding='utf-8').readlines()
+        shuffle(codes)
 
-        if 'error' in res and res['error'] == 'ERROR__ENTER_CODE_AMOUNT_OUT_OF_QUOTA':
-            print('You reached code input limit')
-            break
+        token = getToken()
+
+        for code in codes:
+            print(code)
+            
+            res = useCode(code, token)
+
+            print(res)
+
+            if 'error' in res and res['error'] == 'ERROR__ENTER_CODE_AMOUNT_OUT_OF_QUOTA':
+                print('You reached code input limit')
+                break
+    except Exception as e:
+        print(e)
+    finally:
+        input()

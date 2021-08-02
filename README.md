@@ -13,9 +13,9 @@
 
 ### Hướng dẫn sử dụng cho người lowtech
 - Clone/download repo này
+- Khởi động League Client (LMHT)
 - Mở thư mục `dist`
-- Mở file `lolsn.exe`
-- Nếu thấy lỗi `The system cannot find the path specified...` thì sửa lại đường dẫn cho đúng với thư mục LOL và chạy lại
+- Mở file `lolsn.exe` với quyền Admin (chuột phải vào file chọn "Run as admin")
 
 ### Hướng dẫn sử dụng từ source
 - Clone/download repo này

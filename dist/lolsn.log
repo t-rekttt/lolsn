@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "lolsn.py", line 53, in <module>
+  File "lolsn.py", line 7, in extractTokens
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Garena\\Games\\32787\\Game\\Logs\\LeagueClient Logs'
+Traceback (most recent call last):
+  File "lolsn.py", line 53, in <module>
+  File "lolsn.py", line 7, in extractTokens
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Garena\\Games\\32787\\Game\\Logs\\LeagueClient Logs'
+Traceback (most recent call last):
+  File "lolsn.py", line 43, in <module>
+  File "lolsn.py", line 12, in getToken
+IndexError: list index out of range
