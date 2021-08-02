@@ -8,7 +8,8 @@
 
 ### Ưu điểm:
 - Sử dụng API, không chiếm cửa sổ LOL
-- Tự động extract token từ logs folder
+- Tự động extract token từ LOL client
+- Tự động đổi quà thân thiện
 - Người code đẹp trai
 - Nhanh vcl
 
@@ -19,7 +20,8 @@
 - Clone/download repo này
 - Khởi động League Client (LMHT)
 - Mở thư mục `dist`
-- Mở file `lolsn.exe` với quyền Admin (chuột phải vào file chọn "Run as admin")
+- Mở file `lolsn.exe` với quyền Admin (chuột phải vào file chọn "Run as admin") để tự động nhập code
+- Mở file `lolthanthien.exe`  với quyền Admin (chuột phải vào file chọn "Run as admin") để tự động đổi thưởng khi full thân thiện
 
 ### Hướng dẫn sử dụng từ source
 - Clone/download repo này
@@ -27,6 +29,7 @@
 - Mở cmd/terminal (với quyền Admin), cd vào folder, chạy `pip install requests`
 - Thay đường dẫn file code ở dòng gán biến `codes` nếu cần
 - Chạy `python lolsn.py` hoặc `py lolsn.py`
+- Chạy `python lolthanthien.py` hoặc `py lolthanthien.py`
 
 ### Lưu ý
 - Chỉ chạy được max tới 500 bóng bay nên code sẽ break nếu như gặp giới hạn này
