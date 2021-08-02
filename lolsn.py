@@ -53,6 +53,7 @@ if __name__ == '__main__':
         shuffle(codes)
 
         token = getToken()
+        print('Your token: ', token)
 
         for code in codes:
             print(code)
