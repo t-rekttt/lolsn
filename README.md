@@ -9,7 +9,13 @@
 ### Nhược điểm
 - Đang tìm...
 
-### Hướng dẫn sử dụng
+### Hướng dẫn sử dụng cho người lowtech
+- Clone/download repo này
+- Mở thư mục `dist`
+- Mở file `lolsn.exe`
+- Nếu thấy lỗi `The system cannot find the path specified...` thì sửa lại đường dẫn cho đúng với thư mục LOL và chạy lại
+
+### Hướng dẫn sử dụng từ source
 - Clone/download repo này
 - Mở cmd/terminal, cd vào folder, chạy `pip install requests`
 - Thay đường dẫn thư mục logs của LOL vào biến `logsPath` (hoặc để mặc định nếu bạn cài LOL ở ổ C:\Garena\...). Lưu ý dấu phân cách thư mục phải để là `\\`
