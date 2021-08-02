@@ -26,6 +26,7 @@
 
 ### Lưu ý
 - Chỉ chạy được max tới 500 bóng bay nên code sẽ break nếu như gặp giới hạn này
+- Nếu bị lỗi `SERVER_ERROR` thì bạn thử xoá hết logs đi sau đó chạy lại client LOL 1 lần để token trong logs được cập nhật sau đó chạy lại tool
 - File code mặc định được lấy từ https://github.com/HanaIroha/ToolSinhNhatLOL2021/blob/main/Toolcodell/bin/Release/code.txt. Hãy star repo đó nếu nó giúp ích cho bạn
 
 ### Nếu code chạy tốt, hãy
