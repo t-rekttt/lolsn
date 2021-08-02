@@ -16,6 +16,9 @@
 - Thay đường dẫn file code ở dòng gán biến `codes` nếu cần
 - Chạy `python lolsn.py`
 
+### Lưu ý
+- Chỉ chạy được max tới 500 bóng bay nên code sẽ break nếu như gặp giới hạn này
+
 ### Nếu code chạy tốt, hãy
 - Star repo này
 - Like bài viết
