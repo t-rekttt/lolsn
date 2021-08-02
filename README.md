@@ -12,7 +12,7 @@
 ### Hướng dẫn sử dụng
 - Clone/download repo này
 - Mở cmd/terminal, cd vào folder, chạy `pip install requests`
-- Thay đường dẫn thư mục logs của LOL vào biến `logsPath` (hoặc để mặc định nếu bạn cài LOL ở ổ C:\Garena\...). Lưu ý dấu phân cách thư mục phải để là \\
+- Thay đường dẫn thư mục logs của LOL vào biến `logsPath` (hoặc để mặc định nếu bạn cài LOL ở ổ C:\Garena\...). Lưu ý dấu phân cách thư mục phải để là `\\`
 - Thay đường dẫn file code ở dòng gán biến `codes` nếu cần
 - Chạy `python lolsn.py`
 
