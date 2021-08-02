@@ -29,7 +29,8 @@ def useCode(code, accountToken):
             'Sec-Fetch-Dest': 'empty',
             'Accept-Encoding': 'gzip, deflate, br',
             'Accept-Language': 'en-US,en;q=0.9,vi;q=0.8',
-            'Via': '1.1 vegur'
+            'Via': '1.1 vegur',
+            'Referer': 'https://bargain.lol.garena.vn/?token=' + accountToken
         },
         json = {"code": code.strip(),"confirm":True},
         #proxies = {'https': 'http://localhost:8888'},
