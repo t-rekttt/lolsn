@@ -1,5 +1,7 @@
 ## Tool nhập code sinh nhật LOL 2021
 
+![demo](https://user-images.githubusercontent.com/9071846/127822154-6bc58822-b073-4050-88a2-1bab5c0857df.jpg)
+
 ### Ưu điểm:
 - Sử dụng API, không chiếm cửa sổ LOL
 - Tự động extract token từ logs folder
