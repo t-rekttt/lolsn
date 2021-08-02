@@ -18,7 +18,7 @@
 
 ### Lưu ý
 - Chỉ chạy được max tới 500 bóng bay nên code sẽ break nếu như gặp giới hạn này
-- File code mặc định được lấy từ https://github.com/HanaIroha/ToolSinhNhatLOL2021/blob/main/Toolcodell/bin/Release/code.txt
+- File code mặc định được lấy từ https://github.com/HanaIroha/ToolSinhNhatLOL2021/blob/main/Toolcodell/bin/Release/code.txt. Hãy star repo này nếu nó giúp ích cho bạn
 
 ### Nếu code chạy tốt, hãy
 - Star repo này
