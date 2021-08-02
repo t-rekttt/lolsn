@@ -19,10 +19,10 @@
 
 ### Hướng dẫn sử dụng từ source
 - Clone/download repo này
-- Mở cmd/terminal, cd vào folder, chạy `pip install requests`
-- Thay đường dẫn thư mục logs của LOL vào biến `logsPath` (hoặc để mặc định nếu bạn cài LOL ở ổ C:\Garena\...). Lưu ý dấu phân cách thư mục phải để là `\\`
+- Khởi động League Client (LMHT)
+- Mở cmd/terminal (với quyền Admin), cd vào folder, chạy `pip install requests`
 - Thay đường dẫn file code ở dòng gán biến `codes` nếu cần
-- Chạy `python lolsn.py`
+- Chạy `python lolsn.py` hoặc `py lolsn.py`
 
 ### Lưu ý
 - Chỉ chạy được max tới 500 bóng bay nên code sẽ break nếu như gặp giới hạn này

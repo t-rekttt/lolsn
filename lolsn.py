@@ -1,22 +1,15 @@
-import requests, os, re
+import requests, os, re, subprocess
 from random import shuffle
 
 s = requests.session()
 
-def extractTokens(logsFolderPath):
-    files = os.listdir(logsFolderPath)
-
-    res = set()
-    
-    for file in files:
-        f = open(logsPath + '\\' + file, encoding='utf-8').read()
-
-        match = re.search('\/\?token=(.+?)[#"]', f)
-
-        if match:
-            res.add(match.group(1))
-
-    return list(res)
+def getToken():
+    #League Client command line query
+    command = "WMIC PROCESS WHERE name='LeagueClient.exe' GET commandline"
+    #Get WMIC output
+    output = subprocess.Popen(command, stdout=subprocess.PIPE, shell=True).stdout.read().decode('utf-8')
+    #Parse landing token
+    return re.findall(r'--landing-token=(.*?)\s\-?\-?', output)[0]
 
 def useCode(code, accountToken):
     res = s.post('https://bargain.lol.garena.vn/api/enter',
@@ -47,12 +40,7 @@ if __name__ == '__main__':
     codes = open('lolcode.txt', encoding='utf-8').readlines()
     shuffle(codes)
 
-    #Please fill your own LOL folder logs path
-    logsPath = 'C:\\Garena\\Games\\32787\\Game\\Logs\\LeagueClient Logs'
-
-    tokens = extractTokens(logsPath)
-
-    token = tokens[0]
+    token = getToken()
 
     for code in codes:
         print(code)
