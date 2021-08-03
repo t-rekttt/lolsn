@@ -30,6 +30,7 @@
 - Thay đường dẫn file code ở dòng gán biến `codes` nếu cần
 - Chạy `python lolsn.py` hoặc `py lolsn.py`
 - Chạy `python lolthanthien.py` hoặc `py lolthanthien.py`
+- Nếu dùng Windows Subsystem for Linux (WSL): `python lolsn-wsl.py`, `python lolthanthien-wsl.py`
 
 ### Lưu ý
 - Chỉ chạy được max tới 500 bóng bay nên code sẽ break nếu như gặp giới hạn này
