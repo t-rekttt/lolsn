@@ -56,15 +56,18 @@ if __name__ == '__main__':
         print('Your token: ', token)
 
         for code in codes:
-            print(code)
-            
-            res = useCode(code, token)
+            try:
+                print(code)
+                
+                res = useCode(code, token)
 
-            print(res)
+                print(res)
 
-            if 'error' in res and res['error'] == 'ERROR__ENTER_CODE_AMOUNT_OUT_OF_QUOTA':
-                print('You reached code input limit')
-                break
+                if 'error' in res and res['error'] == 'ERROR__ENTER_CODE_AMOUNT_OUT_OF_QUOTA':
+                    print('You reached code input limit')
+                    break
+            except Exception as e:
+                print(traceback.format_exc())
     except Exception as e:
         print(traceback.format_exc())
     finally:
