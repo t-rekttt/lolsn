@@ -1,4 +1,4 @@
-import requests, os, re, subprocess, ctypes, sys
+import requests, os, re, subprocess, ctypes, sys, traceback
 from random import shuffle
  
 def isAdmin():
@@ -66,6 +66,6 @@ if __name__ == '__main__':
                 print('You reached code input limit')
                 break
     except Exception as e:
-        print(e)
+        print(traceback.format_exc())
     finally:
         input()
