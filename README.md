@@ -5,6 +5,7 @@
 ### Contributors:
 - [Nomi](https://github.com/nomi-san) - Hàm get token
 - [HanaIroha](https://github.com/HanaIroha) - List code
+- [mtuan293](https://github.com/mtuan293) - Hỗ trợ WSL
 
 ### Ưu điểm:
 - Sử dụng API, không chiếm cửa sổ LOL
