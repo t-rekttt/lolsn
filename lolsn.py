@@ -1,4 +1,4 @@
-import requests, os, re, subprocess, ctypes, sys, traceback
+import requests, os, re, subprocess, ctypes, sys, traceback, time
 from random import shuffle
  
 def isAdmin():
@@ -67,7 +67,7 @@ if __name__ == '__main__':
                     print('You reached code input limit')
                     break
                 
-                print('Sleeping 1 seconds')
+                print('Sleeping 1 second')
                 time.sleep(1)
             except Exception as e:
                 print(traceback.format_exc())
