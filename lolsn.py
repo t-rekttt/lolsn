@@ -66,6 +66,9 @@ if __name__ == '__main__':
                 if 'error' in res and res['error'] == 'ERROR__ENTER_CODE_AMOUNT_OUT_OF_QUOTA':
                     print('You reached code input limit')
                     break
+                
+                print('Sleeping 1 seconds')
+                time.sleep(1)
             except Exception as e:
                 print(traceback.format_exc())
     except Exception as e:
